@@ -20,3 +20,4 @@ hake-example.tex
 *.csv
 
 myNotes.*
+.Rproj.user
