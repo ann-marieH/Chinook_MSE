@@ -6,9 +6,6 @@
 ### Re-start 5/12 trying to re-create DGM results ##
 ####################################################
 
-# Test line for git
-# another one
-
 # Load packages
 library(dplyr)
 
