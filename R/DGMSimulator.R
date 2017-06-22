@@ -6,9 +6,6 @@
 ### Re-start 5/12 trying to re-create DGM results ##
 ####################################################
 
-# Set Working Directory
-setwd("C:/Users/DavisBr/Documents/Chinook MSE/R Test")
-
 # Load packages
 library(dplyr)
 
