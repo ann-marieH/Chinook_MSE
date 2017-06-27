@@ -1,0 +1,46 @@
+---
+title: "Test"
+output: pdf_document
+---
+
+```{r}
+knitr::opts_chunk$set(comment="")
+```
+
+
+## This is a random table
+
+This is a test.
+
+<!-- cache=T runs this chunk the first time, but does not run it again -->
+
+```{r sleep, echo=F, cache=T} 
+xx <- data.frame(x=1:10, y=rnorm(10,1,1))
+knitr::kable(xx)
+x <- 1
+for(i in 1:10){
+  Sys.sleep(0.5)
+}
+```
+
+## This is a random figure
+
+```{r}
+plot(xx$x, xx$y)
+```
+
+## This is an equation
+
+$$ 
+x=y+z
+$$
+
+## This is a calculation
+
+```{r, dependson="sleep", results='hide'}
+y<-5
+z<-1
+print(x)
+```
+
+The value of x is `r x`.
